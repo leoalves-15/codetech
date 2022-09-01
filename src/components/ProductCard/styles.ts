@@ -31,7 +31,7 @@ export const ContainerIMG = styled.div`
   }
     @media (max-width: 800px) {
       >img{
-        width: 151.69px;
+        width: 100%;
         height: 128.13px;
       }
       width: 160.14px;

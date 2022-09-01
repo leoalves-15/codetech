@@ -1,8 +1,9 @@
-export type ProductCardProps = {
-    img: string;
-    title: string;
-    salePrice: number;
-    listPrice: number;
-    avaliation: number;
+export type ProductCardType = {
+    Thumbnail_Product: string;
+    Title_Product: string;
+    SalePrice_Product: number;
+    ListPrice_Product: number;
+    Avaliation_Product: number;
+    id: number;
   };
   

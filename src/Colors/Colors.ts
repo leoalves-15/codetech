@@ -15,5 +15,6 @@ export default {
     Card: '#EFF4F5',
     BotaoMaster: 'linear-gradient(135deg, #3D033B 0%, #A30E93 100%);',
     estrela: '#FFB800',
-    listPrice: '#868781'
+    listPrice: '#868781',
+    black: '#000000'
 };

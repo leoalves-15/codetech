@@ -1,23 +1,23 @@
 import React, {FC} from "react";
 import {ContainerCard, ContainerIMG, ProductTitle, ProductPrice, BuyButton} from './styles';
-import {ProductCardProps} from './ProductCard.type'
+import {ProductCardType} from './ProductCard.type'
 import {Container} from '../../GenericStyles/GenericStyles'
 
-const ProductCard: FC<ProductCardProps> = (props) => {
-    const {img, title, salePrice, listPrice, avaliation} = props;
+const ProductCard: FC<ProductCardType> = (props) => {
+    const {Thumbnail_Product, Title_Product, SalePrice_Product, ListPrice_Product, Avaliation_Product, id} = props;
     return (
         <ContainerCard>
             <ContainerIMG>
-                <img src={`${img}`} alt={`Imagem do produto ${title}`} />
+                <img src={`${Thumbnail_Product}`} alt={`Imagem do produto ${Title_Product}`} />
             </ContainerIMG>
             <ProductTitle>
                 <p>
-                    {title}
+                    {Title_Product}
                 </p>
             </ProductTitle>
             <ProductPrice>
-                <p>R$ {listPrice}</p>
-                <p>R$ {salePrice}</p>
+                <p>R$ {ListPrice_Product}</p>
+                <p>R$ {SalePrice_Product}</p>
             </ProductPrice>
             <Container>
                 <BuyButton>
