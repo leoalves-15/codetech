@@ -8,10 +8,12 @@ export default {
     Banner: '#AE16D7',
     CorBannerFundo:'#280034',
     CorFundo: '#130118',
+    CorFundoIMG: '#FFF',
     Botao:'linear-gradient(135deg, #12002B 0%, #A30E93 100%);',
     FundoCompra: '#F1F1F1',
     CorCard: 'transparent',
     Card: '#EFF4F5',
     BotaoMaster: 'linear-gradient(135deg, #3D033B 0%, #A30E93 100%);',
-    estrela: '#FFB800'
+    estrela: '#FFB800',
+    listPrice: '#868781'
 };
