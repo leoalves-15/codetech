@@ -5,7 +5,7 @@ export const ContanerShowCase = styled.div`
 
 `;
 
-export const TitleShowCase = styled.h1`
+export const TitleShowCase = styled.h2`
     font-family: 'Inter';
     font-style: normal;
     font-weight: 700;
