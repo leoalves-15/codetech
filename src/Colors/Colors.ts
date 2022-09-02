@@ -7,6 +7,7 @@ export default {
     CorLogo6: '#D59AFE',
     Banner: '#AE16D7',
     CorBannerFundo:'#280034',
+    CorNewsletter:'#2D2A26',
     CorFundo: '#130118',
     CorFundoIMG: '#FFF',
     Botao:'linear-gradient(135deg, #12002B 0%, #A30E93 100%);',

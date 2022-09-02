@@ -18,7 +18,6 @@ const ProductShowCase: FC<ProductShowCaseProps> = (props) => {
     
     return (
         <ContanerShowCase>
-            <BuyTogether Product1={products[0]} Product2={products[4]}/>
             <TitleShowCase>{title}</TitleShowCase>
             <ContainCards>
             {products?.map((product: ProductCardType, index: number) => {
