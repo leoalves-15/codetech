@@ -10,6 +10,7 @@ export const ContainerNewsletter = styled.div`
   width: 100vw;
   @media (max-width: 1250px){
     flex-direction: column;
+    height: 325.84px;
   }
 `;
 
@@ -18,6 +19,12 @@ export const ContainNewsletter = styled.div`
   display: flex;
   justify-content: center;
   width: 100%;
+  >form{
+    @media (max-width: 1250px){
+      display: flex;
+      flex-direction: column;
+    }
+  }
   >h3{
     font-family: 'Roboto';
     font-style: normal;
@@ -26,6 +33,10 @@ export const ContainNewsletter = styled.div`
     line-height: 140%;
     text-align: center;
     color: ${Colors.CorFundoIMG};
+    @media (max-width: 1250px){
+      width: 300px;
+      font-size: 16px;
+    }
   }
   input{
     padding: 0;
@@ -33,7 +44,7 @@ export const ContainNewsletter = styled.div`
     margin: 0;
     width: 470px;
     height: 38px;
-    background: #FFFFFF;
+    background: ${Colors.CorFundoIMG};
     border: 0 solid #FFFFFF;
     border-radius: 12.5872px 0 0 12.5872px;
     &:focus {
@@ -46,6 +57,14 @@ export const ContainNewsletter = styled.div`
       font-size: 16px;
       line-height: 140%; 
       color: #9E8888;
+    }
+    @media (max-width: 1250px){
+      width: 278.12px;
+      border-radius: 6px;
+      background: #E4E2E4;
+      &::placeholder {
+        font-size: 12px;
+      }
     }
   }
   button{
@@ -60,6 +79,12 @@ export const ContainNewsletter = styled.div`
     font-size: 16px;
     line-height: 140%;
     color: ${Colors.CorFundoIMG};
+    @media (max-width: 1250px){
+      width: 100%;
+      margin-top: 16px;
+      border-radius: 6px;
+      border: 0;
+    }
   }
   >p{
     font-family: 'Roboto';
