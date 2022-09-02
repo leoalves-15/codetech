@@ -42,6 +42,7 @@ export const ContainerIMG = styled.div`
 export const ProductTitle = styled.div`
   padding: 2px 16px;
   >p{
+    height: 66px ;
     font-family: 'Inter';
     font-style: normal;
     font-weight: 500;
@@ -85,6 +86,7 @@ export const ProductPrice = styled.div`
 `;
 
 export const BuyButton = styled.button`
+  cursor: pointer;
   width: 256px;
   height: 38px;
   background: ${Colors.BotaoMaster};
