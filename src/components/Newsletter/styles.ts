@@ -7,7 +7,7 @@ export const ContainerNewsletter = styled.div`
   justify-content: center;
   height: 180px;
   align-items: center;
-  width: 100vw;
+  width: 100%;
   @media (max-width: 1250px){
     flex-direction: column;
     height: 325.84px;
@@ -32,7 +32,7 @@ export const ContainNewsletter = styled.div`
     font-size: 20px;
     line-height: 140%;
     text-align: center;
-    color: ${Colors.CorFundoIMG};
+    color: ${Colors.CorTextoBranco};
     @media (max-width: 1250px){
       width: 300px;
       font-size: 16px;
@@ -78,7 +78,7 @@ export const ContainNewsletter = styled.div`
     font-weight: 400;
     font-size: 16px;
     line-height: 140%;
-    color: ${Colors.CorFundoIMG};
+    color: ${Colors.CorTextoBranco};
     @media (max-width: 1250px){
       width: 100%;
       margin-top: 16px;
@@ -93,6 +93,6 @@ export const ContainNewsletter = styled.div`
     font-size: 20px;
     line-height: 140%;
     text-align: center;
-    color: ${Colors.CorFundoIMG};
+    color: ${Colors.CorTextoBranco};
   }
 `;

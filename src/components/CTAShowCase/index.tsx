@@ -5,7 +5,7 @@ import boleto from '../../assets/Grupo 276.svg';
 import pix from '../../assets/ic_baseline-pix.svg';
 import trunk from '../../assets/carbon_delivery.svg';
 import fast from '../../assets/Vector.svg';
-import CTACard from "../CTACard";
+import CTACard from "./components/CTACard";
 
 const CTAS = [
     {
@@ -40,9 +40,7 @@ const CTAShowCase = () => {
         <ContainerCTACase>
             {CTAS?.map((cta) => {
                 return(
-                    <>
                         <CTACard key={cta.id} Img={cta.img} Title={cta.title}/>
-                    </>
                 )
             })}
         </ContainerCTACase>

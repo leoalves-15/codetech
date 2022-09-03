@@ -10,6 +10,7 @@ export default {
     CorNewsletter:'#2D2A26',
     CorFundo: '#130118',
     CorFundoIMG: '#FFF',
+    CorTextoBranco: '#FFF',
     Botao:'linear-gradient(135deg, #12002B 0%, #A30E93 100%);',
     FundoCompra: '#F1F1F1',
     CorCard: 'transparent',

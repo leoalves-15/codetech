@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import Colors from '../../Colors/Colors'
+import Colors from '../../../../Colors/Colors'
 
 export const ContainerCTACard = styled.div`
   display: flex;

@@ -96,7 +96,7 @@ export const BuyButton = styled.button`
   font-weight: 500;
   font-size: 14px;
   line-height: 17px;
-  color: ${Colors.CorFundoIMG};
+  color: ${Colors.CorTextoBranco};
   margin-top: 19px;
   border-radius: 4px;
   @media (max-width: 800px){
