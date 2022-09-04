@@ -15,7 +15,7 @@ function App() {
 
   return (
     <div className="App">
-      {!isMobile && <Header />}
+      <Header />
       {!isMobile && <CTAShowCase />}
       <CategoryShowCase />
       <ProductShowCase title="Produtos em destaque" productQtd={4} />

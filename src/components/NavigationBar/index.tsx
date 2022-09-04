@@ -3,9 +3,8 @@ import { ContainerNavBar, NavIcon } from "./styles";
 import { MenuIcons } from "../Header/MenuItens";
 import menu from "../../assets/Menu/menu.svg";
 import { useScreen } from "../../hooks/use-screen";
-import {NavTypes} from "./Nav.type";
 
-const NavigationBar: FC<NavTypes> = () => {
+const NavigationBar = () => {
   const { isMobile } = useScreen();
   const [icons, setIcons] = useState<typeof MenuIcons>([]);
 
