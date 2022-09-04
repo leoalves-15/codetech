@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const Container = styled.div`
   width: 100%;
@@ -15,7 +15,7 @@ export const Contain = styled.div`
   height: 100%;
   display: flex;
   width: 100%;
-  @media (max-width: 800px){
+  @media (max-width: 800px) {
     justify-content: flex-start;
   }
 `;

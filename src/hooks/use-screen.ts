@@ -1,4 +1,4 @@
-import {useState, useEffect} from 'react';
+import { useState, useEffect } from "react";
 
 export const useScreen = () => {
   const [isMobile, setIsMobile] = useState<boolean>(false);
@@ -11,8 +11,8 @@ export const useScreen = () => {
 
   useEffect(() => {
     handleResize();
-    window.addEventListener('resize', handleResize);
+    window.addEventListener("resize", handleResize);
   }, []);
 
-  return {isMobile, screen};
+  return { isMobile, screen };
 };

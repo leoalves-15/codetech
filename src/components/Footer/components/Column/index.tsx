@@ -10,7 +10,7 @@ const Column: FC<ColumnType> = (props) => {
             {links?.map((item) => 
                 (
                   <Item key={item.label}>
-                    <a href={item.link}>{item.label}</a>
+                    <a target="_blank" href={item.link}>{item.label}</a>
                   </Item>  
                 ))}
         </ContainerColumn>

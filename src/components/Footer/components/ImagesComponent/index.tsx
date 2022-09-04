@@ -7,7 +7,7 @@ const ImagesComponent: FC<ImagesComponentsTypes> = (props) => {
     return (
         <ContainerImagesComponent>
             {images.map((image) => (
-                <a key={image.id} href={image?.link}>
+                <a target="_blank" key={image.id} href={image?.link}>
                     <img src={image.src} alt={image.title} />
                 </a>
             ))
