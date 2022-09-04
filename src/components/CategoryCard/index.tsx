@@ -1,4 +1,4 @@
-import React, {useState, useEffect, FC} from "react";
+import React, {FC} from "react";
 import {CategoryType} from './category.type';
 import {CategoryContainer, CircleImg, CatgeoryTitle} from './styles';
 

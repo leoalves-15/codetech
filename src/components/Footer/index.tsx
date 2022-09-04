@@ -17,11 +17,11 @@ import {
   socialFooter,
 } from "./footerDatas";
 import Logo from "../../assets/logo.svg";
-import { useMobile } from "../../hooks/use-is-mobile";
+import { useScreen } from "../../hooks/use-screen";
 import { Contain } from "../../GenericStyles/GenericStyles";
 
 const Footer = () => {
-  const isMobile = useMobile();
+  const {isMobile} = useScreen();
 
   return (
     <ContainerFooter>

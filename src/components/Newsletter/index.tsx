@@ -2,21 +2,17 @@ import React, {useState, useEffect} from "react";
 import {ContainerNewsletter, ContainNewsletter} from './styles';
 import {sendNewsletter} from "../../utils/services/newsletter";
 import Logo from '../../assets/logo.svg';
-import {useMobile} from  '../../hooks/use-is-mobile';
+import {useScreen} from  '../../hooks/use-screen';
 
 
 const Newsletter = () => {
     const [email, setEmail] = useState<string>('');
-    const isMobile = useMobile();
+    const {isMobile} = useScreen();
 
     const Send = async (e: React.SyntheticEvent) =>{
         e.preventDefault();
         sendNewsletter(email);
     }
-
-    useEffect(() => {
-      console.log('teste', isMobile)
-    }, [isMobile])
     
     return (
         <ContainerNewsletter>
