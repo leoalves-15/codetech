@@ -8,17 +8,19 @@ import Footer from "./components/Footer";
 import Header from "./components/Header";
 import "./App.css";
 import "./assets/fonts/Inter-3.19/InterWeb/inter.css";
+import NavigationBar from "./components/NavigationBar";
 
 function App() {
   const { isMobile } = useScreen();
 
   return (
     <div className="App">
-      <Header />
+      {!isMobile && <Header />}
       {!isMobile && <CTAShowCase />}
       <CategoryShowCase />
       <ProductShowCase title="Produtos em destaque" productQtd={4} />
       <Newsletter />
+      {isMobile && <NavigationBar />}
       <Footer />
     </div>
   );

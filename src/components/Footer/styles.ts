@@ -9,7 +9,7 @@ export const ContainerFooter = styled.footer`
   height: 441px;
   background: ${Colors.black};
   @media (max-width: 800px){
-    height: 1200px;
+    height: 1250px;
   }
 `;
 

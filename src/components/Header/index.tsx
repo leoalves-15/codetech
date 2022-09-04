@@ -38,7 +38,7 @@ const Header = () => {
         <div>
           <Logo src={logo} alt="logo" />
         </div>
-        <div>
+        <nav>
           {MenuItens?.map((item) => {
             return (
               <MenuLink key={item.id} target="_blank" href={item.link}>
@@ -46,7 +46,7 @@ const Header = () => {
               </MenuLink>
             );
           })}
-        </div>
+        </nav>
         <div>
           {MenuIcons?.map((item) => {
             return <MenuIcon key={item.id} src={item.icon} alt={item.title} />;
