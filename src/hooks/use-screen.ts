@@ -6,7 +6,7 @@ export const useScreen = () => {
 
   const handleResize = () => {
     setScreen(window.innerWidth);
-    setIsMobile(window.innerWidth <= 1024);
+    setIsMobile(window.innerWidth <= 800);
   };
 
   useEffect(() => {

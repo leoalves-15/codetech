@@ -40,6 +40,8 @@ export const ContainDots = styled.div`
     margin-top: -30px;
     justify-content: center;
     .active{
+        width: 10px;
         background: #AE16D7;
+        border-radius: 8px;
     }
 `;

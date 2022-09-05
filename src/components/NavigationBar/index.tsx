@@ -1,5 +1,5 @@
 import React, { useEffect, useState, FC } from "react";
-import { ContainerNavBar, NavIcon } from "./styles";
+import { ContainerNavBar, NavIcon, Border } from "./styles";
 import { MenuIcons } from "../Header/MenuItens";
 import menu from "../../assets/Menu/menu.svg";
 import { useScreen } from "../../hooks/use-screen";
@@ -17,11 +17,13 @@ const NavigationBar = () => {
   }, [isMobile]);
 
   return (
-    <ContainerNavBar>
-      {icons?.map((item) => {
-        return <NavIcon key={item.id} src={item.icon} alt={item.title} />;
-      })}
-    </ContainerNavBar>
+    <Border>
+      <ContainerNavBar>
+        {icons?.map((item) => {
+          return <NavIcon key={item.id} src={item.icon} alt={item.title} />;
+        })}
+      </ContainerNavBar>
+    </Border>
   );
 };
 

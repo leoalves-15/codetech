@@ -17,6 +17,7 @@ export const ContainerBanner = styled.div`
     max-height: 30%;
     img {
       margin-top: 0px;
+      max-height: 250px;
     }
   }
 `;
