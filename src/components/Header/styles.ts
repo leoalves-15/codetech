@@ -9,8 +9,7 @@ export const ContainerHeader = styled.div`
     align-items: center;
     flex-direction: column;
     justify-content: space-evenly;
-    /* remover */
-    background: black;
+    background: ${Colors.CorBannerFundo};
   }
   > form label {
     position: relative;

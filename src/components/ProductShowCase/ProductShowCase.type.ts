@@ -1,5 +1,6 @@
 export type ProductShowCaseProps = {
-    title: string;
+    title?: string;
     productQtd: number;
+    buyTogether?: boolean;
 };
   

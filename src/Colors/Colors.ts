@@ -13,6 +13,7 @@ export default {
   CorFundoIMG: "#FFF",
   CorTextoBranco: "#FFF",
   Botao: "linear-gradient(135deg, #12002B 0%, #A30E93 100%);",
+  BannerGradient: "linear-gradient(180deg, #000000 0%, #000000 13.02%, rgba(0, 0, 0, 0) 100%);",
   FundoCompra: "#F1F1F1",
   CorCard: "transparent",
   Card: "#EFF4F5",

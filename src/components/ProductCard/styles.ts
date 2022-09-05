@@ -59,6 +59,7 @@ export const ProductTitle = styled.div`
   }
     @media (max-width: 800px) {
       >p{
+        height: 42px;
         -webkit-line-clamp: 2;
       }
     }

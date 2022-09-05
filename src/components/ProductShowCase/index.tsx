@@ -1,37 +1,36 @@
-import React, {FC, useEffect, useState} from "react";
-import {ProductShowCaseProps} from './ProductShowCase.type'
-import {ContainCards, ContanerShowCase, TitleShowCase} from './styles'
-import {getProducts} from "../../utils/services/getProduct";
+import React, { FC, useEffect, useState } from "react";
+import { ProductShowCaseProps } from "./ProductShowCase.type";
+import { ContainCards, ContanerShowCase, TitleShowCase } from "./styles";
+import { getProducts } from "../../utils/services/getProducts";
 import ProductCard from "../ProductCard";
-import {ProductCardType} from '../ProductCard/ProductCard.type';
-import BuyTogether from '../BuyTogether'
+import { ProductCardType } from "../ProductCard/ProductCard.type";
 
 const response = await getProducts();
 
 const ProductShowCase: FC<ProductShowCaseProps> = (props) => {
-    const {title, productQtd} = props;
-    const [products, setProducts] =  useState<ProductCardType[]>([]);
+  const { title, productQtd, buyTogether = false } = props;
+  const [products, setProducts] = useState<ProductCardType[]>([]);
 
-    useEffect(() => {
-        setProducts(response);
-    }, []);
-    
-    return (
-        <ContanerShowCase>
-            <TitleShowCase>{title}</TitleShowCase>
-            <ContainCards>
-            {products?.map((product: ProductCardType, index: number) => {
-                return(
-                    <>
-                        {productQtd > index && (
-                            <ProductCard key={product.id} {...product}/>
-                        )}
-                    </>
-                )
-            })}
-        </ContainCards>
-        </ContanerShowCase>
-    );
-}
+  useEffect(() => {
+    setProducts(response);
+  }, []);
+
+  return (
+    <ContanerShowCase>
+      <TitleShowCase>{title}</TitleShowCase>
+      <ContainCards>
+        {products?.map((product: ProductCardType, index: number) => {
+          return (
+            <>
+              {productQtd > index && (
+                <ProductCard key={product.id} {...product} />
+              )}
+            </>
+          );
+        })}
+      </ContainCards>
+    </ContanerShowCase>
+  );
+};
 
 export default ProductShowCase;

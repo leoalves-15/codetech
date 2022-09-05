@@ -5,6 +5,7 @@ import Colors from '../../Colors/Colors';
 export const ContainerBuyTogether = styled(ContainerCard)`
   width: 551px;
   height: 457px;
+  position: relative;
   background: ${Colors.CorFundoIMG};
     @media (max-width: 800px) {
         width: 333px;
@@ -26,7 +27,7 @@ export const IMGBuyTogether = styled(ContainerIMG)`
     object-fit: contain;
     position: absolute;
     left: 360px;
-    top: 150px;
+    top: 0;
   }
     @media (max-width: 800px) {
       >img:first-child{
