@@ -3,7 +3,7 @@ import BuyTogether from "../BuyTogether";
 import { useScreen } from "../../hooks/use-screen";
 import ProductShowCase from "../ProductShowCase";
 import { getProduct } from "../../utils/services/getProduct";
-import { ContainerBTShowCase } from "./styles";
+import { ContainerBTShowCase, ShowMore, ContainerBTN } from "./styles";
 import { TitleShowCase } from "../../components/ProductShowCase/styles";
 import { BuyTogetherType } from "./BuyTogether.type";
 
@@ -21,6 +21,11 @@ const BuyTogetherShowCase: FC<BuyTogetherType> = (props) => {
         <BuyTogether Product1={product1} Product2={product2} />
         {!isMobile && <ProductShowCase productQtd={2} />}
       </ContainerBTShowCase>
+      {!isMobile && (
+        <ContainerBTN>
+          <ShowMore>Veja mais produtos</ShowMore>
+        </ContainerBTN>
+      )}
     </div>
   );
 };

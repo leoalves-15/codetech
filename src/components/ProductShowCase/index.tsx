@@ -13,7 +13,7 @@ import { ProductCardType } from "../ProductCard/ProductCard.type";
 const response = await getProducts();
 
 const ProductShowCase: FC<ProductShowCaseProps> = (props) => {
-  const { title, productQtd } = props;
+  const { title, productQtd, bg = false } = props;
   const [products, setProducts] = useState<ProductCardType[]>([]);
   const [showProducts, setShowProducts] = useState<ReactNode[]>([]);
 
@@ -37,7 +37,7 @@ const ProductShowCase: FC<ProductShowCaseProps> = (props) => {
   }, []);
 
   return (
-    <ContanerShowCase>
+    <ContanerShowCase bg={bg}>
       <TitleShowCase>{title}</TitleShowCase>
 
       {productQtd > 2 ? (

@@ -2,7 +2,6 @@ import styled from "styled-components";
 import Colors from "../../Colors/Colors";
 
 export const ContainerNewsletter = styled.div`
-  margin-top: 100px;
   display: flex;
   background: ${Colors.CorNewsletter};
   justify-content: center;

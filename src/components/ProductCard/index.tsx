@@ -19,7 +19,7 @@ const ProductCard: FC<ProductCardType> = (props) => {
     SalePrice_Product,
     ListPrice_Product,
     Avaliation_Product,
-    id,
+    id
   } = props;
   const dispatch = useDispatch();
   return (

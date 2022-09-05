@@ -1,7 +1,9 @@
 import styled from "styled-components";
 import Colors from "../../Colors/Colors";
 
-export const ContanerShowCase = styled.div``;
+export const ContanerShowCase = styled.div`
+  ${(props) => props.bg ? "padding: 50px; background: #F8F8F8;" : ""};
+`;
 
 export const TitleShowCase = styled.h2`
   font-family: "Inter";
@@ -42,7 +44,7 @@ export const ContainCards = styled.div`
 export const ContainCardsB = styled(ContainCards)`
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(1, 1fr);
-  >div{
+  > div {
     margin-left: 10px;
   }
 `;

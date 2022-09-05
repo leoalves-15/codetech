@@ -11,13 +11,11 @@ import MainBanner from "./components/MainBanner";
 import "./App.css";
 import "./assets/fonts/Inter-3.19/InterWeb/inter.css";
 import NavigationBar from "./components/NavigationBar";
-import Cart from "./components/Cart";
 function App() {
   const { isMobile } = useScreen();
 
   return (
     <div className="App">
-      <Cart/>
       <Header />
       <MainBanner />
       <CategoryShowCase />
@@ -25,7 +23,7 @@ function App() {
       {!isMobile && <CTAShowCase />}
       <BuyTogetherShowCase title="Novidade" />
       {!isMobile && (
-        <ProductShowCase title="Produtos também pode gostar" productQtd={4} />
+        <ProductShowCase title="Produtos também pode gostar" bg productQtd={4} />
       )}
       <Newsletter />
       {isMobile && <NavigationBar />}
