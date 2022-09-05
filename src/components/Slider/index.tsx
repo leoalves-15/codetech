@@ -58,15 +58,15 @@ const Slider: FC<slideProps> = (props) => {
     for (let i = 0; i < resources.length - itensPerScreen + firstPage; i++) {
       dotsAux.push(i);
     }
-    setShowDots(
-      dotsAux?.map((item) => (
-        <Dots
-          key={item}
-          className={`${item === currentSlide && "active"}`}
-          onClick={() => movePage(item)}
-        ></Dots>
-      ))
-    );
+    let listDots = [];
+    listDots = dotsAux?.map((item) => (
+      <Dots
+        key={item}
+        className={`${item === currentSlide && "active"}`}
+        onClick={() => movePage(item)}
+      ></Dots>
+    ));
+    setShowDots(listDots);
   }, [resources.length, itensPerScreen, currentSlide]);
 
   return (

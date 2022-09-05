@@ -13,8 +13,11 @@ export const ContainerBanner = styled.div`
     background: ${Colors.CorBannerFundo};
   }
   @media (max-width: 800px) {
-    height: 559px;
+    height: 400px;
     max-height: 30%;
+    img {
+      margin-top: 0px;
+    }
   }
 `;
 
@@ -42,7 +45,7 @@ export const TitleBanner = styled.div`
   @media (min-width: 1100px) {
     width: 555px;
     margin-top: -400px;
-    padding-left:140px;
+    padding-left: 140px;
   }
   @media (max-width: 800px) {
     font-family: "Inter";
@@ -69,7 +72,7 @@ export const BannerButton = styled.button`
   margin-left: 140px;
 
   @media (max-width: 800px) {
-    margin-left:0px;
+    margin-left: 0px;
     width: 191px;
     height: 32px;
     background: ${Colors.Banner};

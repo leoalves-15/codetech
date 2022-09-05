@@ -5,6 +5,7 @@ import Newsletter from "./components/Newsletter";
 import CategoryShowCase from "./components/CategoryShowCase";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
+import BuyTogetherShowCase from "./components/BuyTogetherShowCase";
 import MainBanner from "./components/MainBanner";
 import "./App.css";
 import "./assets/fonts/Inter-3.19/InterWeb/inter.css";
@@ -20,8 +21,10 @@ function App() {
       <CategoryShowCase />
       <ProductShowCase title="Produtos em destaque" productQtd={4} />
       {!isMobile && <CTAShowCase />}
-      <ProductShowCase buyTogether productQtd={!isMobile ? 2 : 0} />
-      <ProductShowCase title="Produtos também pode gostar" productQtd={4} />
+      <BuyTogetherShowCase title="Novidade" />
+      {!isMobile && (
+        <ProductShowCase title="Produtos também pode gostar" productQtd={4} />
+      )}
       <Newsletter />
       {isMobile && <NavigationBar />}
       <Footer />

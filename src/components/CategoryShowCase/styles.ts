@@ -7,6 +7,7 @@ export const ContainerShowCase = styled.div`
     background: #200528;
     height: 280px;
     justify-content: space-evenly;
+    margin-bottom: 50px;
     @media (max-width: 800px){
         height: 200px;
     }
