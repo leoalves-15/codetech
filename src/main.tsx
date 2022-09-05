@@ -4,6 +4,7 @@ import App from "./App";
 import "./index.css";
 import { Provider } from "react-redux";
 import storeConfig from "./store";
+<meta name="apple-mobile-web-app-status-bar-style theme-color" content="#C706FF" />
 
 const store = storeConfig();
 

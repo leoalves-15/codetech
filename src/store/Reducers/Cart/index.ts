@@ -1,9 +1,10 @@
 import addCart from "../../Actions/addCart";
-let cart = JSON.parse(localStorage.getItem('cart') || '');
+import {AddCart} from "./type"
+let cart = JSON.parse(localStorage.getItem('cart') || '{}');
 
 const initial_value = cart || [{}];
 
-export default function reducer(state = initial_value, action) {
+export default function reducer(state = initial_value, action: AddCart) {
   if (action.type === "ADD_PRODUCT") {
     let newCart = [...state]
 

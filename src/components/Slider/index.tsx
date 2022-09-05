@@ -47,9 +47,7 @@ const Slider: FC<slideProps> = (props) => {
 
   useEffect(() => {
     let currentPage = currentCard - itensPerScreen;
-    if (currentPage > 0) {
-      setCurrentSlide(currentPage);
-    }
+    setCurrentSlide(currentPage);
   }, [currentCard]);
 
   useEffect(() => {
