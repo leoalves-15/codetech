@@ -13,11 +13,14 @@ import Facebook from "../../assets/Menu/facebook.svg";
 import Twitter from "../../assets/Menu/twitter.svg";
 import Tumblr from "../../assets/Menu/tumblr.svg";
 import TikTok from "../../assets/Menu/tik_tok.svg";
+import { useNavigate } from 'react-router-dom';
 
 const MobileMenu = () => {
+  const navigate = useNavigate();
+
   return (
     <ContainerMenu>
-      <Closebutton>
+      <Closebutton onClick={() => {navigate('/')}} >
         <div>
           <img src={Close} alt="close menu" />
         </div>

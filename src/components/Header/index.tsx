@@ -12,10 +12,12 @@ import {
   SearchBar,
 } from "./styles";
 import logo from "../../assets/logo.svg";
+import { useNavigate } from 'react-router-dom';
 import { TopBarLinks, TopBarSocial, MenuItens, MenuIcons } from "./MenuItens";
 import { useScreen } from "../../hooks/use-screen";
 
 const Header = () => {
+  const navigate = useNavigate();
   const { isMobile } = useScreen();
   const search = (e: React.SyntheticEvent) => {
     e.preventDefault();
@@ -59,7 +61,7 @@ const Header = () => {
             <div>
               {MenuIcons?.map((item) => {
                 return (
-                  <MenuIcon key={item.id} src={item.icon} alt={item.title} />
+                  <MenuIcon key={item.id} src={item.icon} alt={item.title} onClick={() => {navigate(`./${item.title}`)}}/>
                 );
               })}
             </div>

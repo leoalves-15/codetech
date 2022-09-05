@@ -8,6 +8,9 @@ export const ContainCart = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  @media (max-width:800px){
+    margin-bottom: 60px;
+  }
 `;
 
 export const OrderResume = styled.div`

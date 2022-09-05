@@ -1,34 +1,21 @@
-import ProductShowCase from "./components/ProductShowCase";
-import CTAShowCase from "./components/CTAShowCase";
-import { useScreen } from "./hooks/use-screen";
-import Newsletter from "./components/Newsletter";
-import CategoryShowCase from "./components/CategoryShowCase";
-import Footer from "./components/Footer";
-import Header from "./components/Header";
-import MobileMenu from "./components/MobileMenu";
-import BuyTogetherShowCase from "./components/BuyTogetherShowCase";
-import MainBanner from "./components/MainBanner";
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import "./App.css";
 import "./assets/fonts/Inter-3.19/InterWeb/inter.css";
-import NavigationBar from "./components/NavigationBar";
-function App() {
-  const { isMobile } = useScreen();
+import Home from './pages/Home';
+import CartPage from './pages/cart';
+import MenuPage from './pages/menu';
 
+function App() {
   return (
-    <div className="App">
-      <Header />
-      <MainBanner />
-      <CategoryShowCase />
-      <ProductShowCase title="Produtos em destaque" productQtd={4} />
-      {!isMobile && <CTAShowCase />}
-      <BuyTogetherShowCase title="Novidade" />
-      {!isMobile && (
-        <ProductShowCase title="Produtos também pode gostar" bg productQtd={4} />
-      )}
-      <Newsletter />
-      {isMobile && <NavigationBar />}
-      {isMobile && <MobileMenu />}
-      <Footer />
+    <div>
+      <Router>
+          <Routes>
+            <Route path="/" element={<Home />}> </Route>
+             <Route path="/Cart" element={<CartPage />}> </Route>
+            <Route path="/Menu" element={<MenuPage />}> </Route> 
+          </Routes>
+      </Router>
     </div>
   );
 }

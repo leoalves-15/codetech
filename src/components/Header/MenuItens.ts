@@ -14,9 +14,9 @@ export const MenuItens = [
 ];
 
 export const MenuIcons = [
-  { id: 1, title: "glass", link: "", icon: glass },
-  { id: 2, title: "user", link: "", icon: user },
-  { id: 3, title: "cart", link: "", icon: cart },
+  { id: 1, title: "search", link: "", icon: glass },
+  { id: 2, title: "myaccount", link: "", icon: user },
+  { id: 3, title: "Cart", link: "", icon: cart },
 ];
 
 export const TopBarLinks = [
