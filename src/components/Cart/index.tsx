@@ -34,25 +34,27 @@ const Cart: FC<CartType> = (props) => {
         return item.id;
       })
     );
-  }, []);
+  }, [cart]);
 
   return (
     <ContainCart>
-      {products?.map((item) => {
-        return (
-          <>
-            {item.Title_Product && (
-              <CartItem
-                img={item.Thumbnail_Product}
-                title={item.Title_Product}
-                salePrice={item.SalePrice_Product}
-                listPice={item.ListPrice_Product}
-                qtd={2}
-              />
-            )}
-          </>
-        );
-      })}
+      <div>
+        {products?.map((item) => {
+          return (
+            <>
+              {item.Title_Product && (
+                <CartItem
+                  img={item.Thumbnail_Product}
+                  title={item.Title_Product}
+                  salePrice={item.SalePrice_Product}
+                  listPice={item.ListPrice_Product}
+                  qtd={2}
+                />
+              )}
+            </>
+          );
+        })}
+      </div>
       <OrderResume>
         <ProductPrice>
           <p></p>

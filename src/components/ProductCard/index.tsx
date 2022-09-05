@@ -6,6 +6,8 @@ import {
   ProductPrice,
   BuyButton,
 } from "./styles";
+import { useDispatch } from "react-redux";
+import addCart from "../../store/Actions/addCart";
 import { ProductCardType } from "./ProductCard.type";
 import toReal from "../../helps/currency";
 import { Container } from "../../GenericStyles/GenericStyles";
@@ -19,6 +21,7 @@ const ProductCard: FC<ProductCardType> = (props) => {
     Avaliation_Product,
     id,
   } = props;
+  const dispatch = useDispatch();
   return (
     <ContainerCard>
       <ContainerIMG>
@@ -35,7 +38,13 @@ const ProductCard: FC<ProductCardType> = (props) => {
         <p>{toReal(SalePrice_Product)}</p>
       </ProductPrice>
       <Container>
-        <BuyButton>Comprar</BuyButton>
+        <BuyButton
+          onClick={() => {
+            dispatch(addCart({ id, qtd: 1}));
+          }}
+        >
+          Comprar
+        </BuyButton>
       </Container>
     </ContainerCard>
   );

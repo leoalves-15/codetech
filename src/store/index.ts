@@ -1,9 +1,8 @@
 import { createStore, combineReducers } from "redux";
+import cart from "./Reducers/Cart";
 
 const reducers = combineReducers({
-  cart: function (state, action) {
-    return [{id: 1, qtd: 2}];
-  },
+  cart
 });
 
 function store() {
