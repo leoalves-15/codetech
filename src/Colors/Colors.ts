@@ -22,4 +22,5 @@ export default {
   listPrice: "#868781",
   black: "#000000",
   Titulos: "#f7f7f7",
+  Paragrafos: "#b7b7b7"
 };

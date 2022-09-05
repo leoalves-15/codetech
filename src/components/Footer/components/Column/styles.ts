@@ -24,7 +24,7 @@ export const Item = styled.li`
   }
   @media (max-width: 800px){
     >a{
-      color: #b7b7b7;
+      color: ${Colors.Paragrafos};
     }
   }
 `;

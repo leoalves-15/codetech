@@ -5,6 +5,7 @@ import Newsletter from "./components/Newsletter";
 import CategoryShowCase from "./components/CategoryShowCase";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
+import MobileMenu from "./components/MobileMenu";
 import BuyTogetherShowCase from "./components/BuyTogetherShowCase";
 import MainBanner from "./components/MainBanner";
 import "./App.css";
@@ -27,6 +28,7 @@ function App() {
       )}
       <Newsletter />
       {isMobile && <NavigationBar />}
+      {isMobile && <MobileMenu />}
       <Footer />
     </div>
   );
