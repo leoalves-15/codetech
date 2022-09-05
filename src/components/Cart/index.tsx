@@ -3,6 +3,9 @@ import { ContainCart, OrderResume } from "./styles";
 import { BuyButton, ProductPrice } from "../ProductCard/styles";
 import { connect } from "react-redux";
 import { CartType } from "./cart.type";
+import Close from "../../assets/Close.svg";
+import { Closebutton } from "../MobileMenu/styles";
+import { useNavigate } from 'react-router-dom';
 import CartItem from "./Components/ItemCart";
 import toReal from "../../helps/currency";
 import { getProductsByID } from "../../utils/services/getProductsByID";
@@ -35,10 +38,20 @@ const Cart: FC<CartType> = (props) => {
       })
     );
   }, [cart]);
+  const navigate = useNavigate();
 
   return (
     <ContainCart>
       <div>
+      <Closebutton
+        onClick={() => {
+          navigate("/");
+        }}
+      >
+        <div>
+          <img src={Close} alt="close menu" />
+        </div>
+      </Closebutton>
         {products?.map((item) => {
           return (
             <>

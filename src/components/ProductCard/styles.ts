@@ -1,5 +1,5 @@
-import styled from 'styled-components';
-import Colors from '../../Colors/Colors'
+import styled from "styled-components";
+import Colors from "../../Colors/Colors";
 
 export const ContainerCard = styled.div`
   width: 287px;
@@ -9,10 +9,34 @@ export const ContainerCard = styled.div`
   border-radius: 10px;
   box-sizing: border-box;
   cursor: pointer;
-    @media (max-width: 800px) {
-      width: 159px;
-      height: 298px;
-    }
+  @media (max-width: 800px) {
+    width: 159px;
+    height: 298px;
+  }
+`;
+
+export const Avaliation = styled.div`
+  display: flex;
+  height: 12px;
+  align-items: center;
+  width: 100%;
+  padding-left: 15px;
+  > p {
+    margin: 0;
+    padding-left: 5px;
+    width: 16px;
+    height: 14px;
+    font-family: "DM Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 14px;
+    letter-spacing: 0.238462px;
+    color: #000000;
+  }
+  > img {
+    height: 12px;
+  }
 `;
 
 export const ContainerIMG = styled.div`
@@ -23,27 +47,28 @@ export const ContainerIMG = styled.div`
   height: 222.75px;
   background-color: ${Colors.CorFundoIMG};
   border-radius: 10px 10px 0px 0px;
-  >img{
+  > img {
     width: 254px;
     height: 200px;
     object-fit: cover;
     border-radius: 10px 10px 0px 0px;
   }
-    @media (max-width: 800px) {
-      >img{
-        width: 100%;
-        height: 128.13px;
-      }
-      width: 160.14px;
-      height: 123.86px;
+  @media (max-width: 800px) {
+    > img {
+      width: 100%;
+      height: 128.13px;
     }
+    width: 160.14px;
+    height: 123.86px;
+  }
 `;
 
 export const ProductTitle = styled.div`
   padding: 2px 16px;
-  >p{
-    height: 66px ;
-    font-family: 'Inter';
+  > p {
+    margin-bottom: 0;
+    height: 66px;
+    font-family: "Inter";
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
@@ -57,33 +82,34 @@ export const ProductTitle = styled.div`
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
   }
-    @media (max-width: 800px) {
-      >p{
-        height: 42px;
-        -webkit-line-clamp: 2;
-      }
+  @media (max-width: 800px) {
+    > p {
+      height: 42px;
+      -webkit-line-clamp: 2;
     }
+  }
 `;
 
 export const ProductPrice = styled.div`
   padding: 2px 16px;
-  >p{
-    font-family: 'Inter';
+  > p {
+    font-family: "Inter";
     font-style: normal;
     margin: 1px 0 0 0;
   }
-  >p:first-child{
+  > p:first-child {
     text-decoration-line: line-through;
     color: ${Colors.listPrice};
     font-size: 14px;
     font-weight: 500;
     line-height: 17px;
   }
-  >p:nth-child(2), p:nth-child(3){
+  > p:nth-child(2),
+  p:nth-child(3) {
     font-weight: 600;
     font-size: 16px;
     line-height: 19px;
-  } 
+  }
 `;
 
 export const BuyButton = styled.button`
@@ -92,7 +118,7 @@ export const BuyButton = styled.button`
   height: 38px;
   background: ${Colors.BotaoMaster};
   border: none;
-  font-family: 'Inter';
+  font-family: "Inter";
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -100,7 +126,7 @@ export const BuyButton = styled.button`
   color: ${Colors.CorTextoBranco};
   margin-top: 19px;
   border-radius: 4px;
-  @media (max-width: 800px){
+  @media (max-width: 800px) {
     border-radius: 8px;
     margin-top: 10px;
     width: 122px;
