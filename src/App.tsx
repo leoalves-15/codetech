@@ -11,12 +11,13 @@ import MainBanner from "./components/MainBanner";
 import "./App.css";
 import "./assets/fonts/Inter-3.19/InterWeb/inter.css";
 import NavigationBar from "./components/NavigationBar";
-
+import Cart from "./components/Cart";
 function App() {
   const { isMobile } = useScreen();
 
   return (
     <div className="App">
+      <Cart/>
       <Header />
       <MainBanner />
       <CategoryShowCase />

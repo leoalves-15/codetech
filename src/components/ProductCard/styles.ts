@@ -79,7 +79,7 @@ export const ProductPrice = styled.div`
     font-weight: 500;
     line-height: 17px;
   }
-  >p:nth-child(2){
+  >p:nth-child(2), p:nth-child(3){
     font-weight: 600;
     font-size: 16px;
     line-height: 19px;
