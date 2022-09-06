@@ -8,7 +8,7 @@ import MenuPage from "./pages/Menu";
 
 function App() {
   return (
-      <BrowserRouter basename={process.env.PUBLIC_URL}>
+      <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home />}/>
           <Route path="/Cart" element={<CartPage />}/>
