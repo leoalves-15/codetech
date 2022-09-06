@@ -24,7 +24,7 @@ export default function reducer(state = initial_value, action: AddCart) {
 
     localStorage.setItem("cart", JSON.stringify(newCart));
 
-    return state;
+    return newCart;
   }
   return state;
 }
