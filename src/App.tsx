@@ -11,7 +11,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home />}/>
-          <Route path="/Cart" element={<CartPage />}/>
+          <Route path="codetech.onrender.com/Cart" element={<CartPage />}/>
           <Route path="/Menu" element={<MenuPage />}/>
         </Routes>
       </BrowserRouter>
