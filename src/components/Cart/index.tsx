@@ -39,11 +39,13 @@ const Cart: FC<CartType> = (props) => {
   }
 
   useEffect(() => {
-    callProducts(
-      cart?.map((item) => {
-        return item.id;
-      })
-    );
+    if(cart.length > 0){
+      callProducts(
+        cart?.map((item) => {
+          return item.id;
+        })
+      );
+    }
   }, [cart]);
   const navigate = useNavigate();
 
