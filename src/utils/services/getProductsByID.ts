@@ -4,7 +4,7 @@ export const getProductsByID = async (ids: number[]) => {
     const idsFormated = ids.toString().replace(/,/g, '_');
     var config = {
         method: 'get',
-        url: `http://codetechback.herokuapp.com/api/products/ids/${idsFormated}`,
+        url: `https://codetechback.herokuapp.com/api/products/ids/${idsFormated}`,
         headers: { }
     };
     

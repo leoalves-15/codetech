@@ -2,7 +2,7 @@ import axios from "axios";
 
 var config = {
     method: 'get',
-    url: 'http://codetechback.herokuapp.com/api/products',
+    url: 'https://codetechback.herokuapp.com/api/products',
     headers: { }
 };
 
