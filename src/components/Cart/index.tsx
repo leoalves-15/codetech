@@ -90,7 +90,7 @@ const Cart: FC<CartType> = (props) => {
 
 function mapStateToProps(state: CartType) {
   return {
-    cart: state.cart || [],
+    cart: state?.cart || [],
   };
 }
 export default connect(mapStateToProps)(Cart);
