@@ -3,8 +3,8 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import "./App.css";
 import "./assets/fonts/Inter-3.19/InterWeb/inter.css";
 import Home from './pages/Home';
-import CartPage from './pages/cart';
-import MenuPage from './pages/menu';
+import CartPage from './pages/Cart';
+import MenuPage from './pages/Menu';
 
 function App() {
   return (
