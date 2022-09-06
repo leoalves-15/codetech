@@ -10,12 +10,17 @@ import { getProducts } from "../../utils/services/getProducts";
 import ProductCard from "../ProductCard";
 import { ProductCardType } from "../ProductCard/ProductCard.type";
 
-const response = await getProducts();
-
 const ProductShowCase: FC<ProductShowCaseProps> = (props) => {
   const { title, productQtd, bg = false } = props;
   const [products, setProducts] = useState<ProductCardType[]>([]);
   const [showProducts, setShowProducts] = useState<ReactNode[]>([]);
+
+  useEffect(() => {
+    const load = async () => {
+      setProducts(await getProducts());
+    };
+    load();
+  }, []);
 
   useEffect(() => {
     const showProductsAux = products?.map(
@@ -31,10 +36,6 @@ const ProductShowCase: FC<ProductShowCaseProps> = (props) => {
     );
     setShowProducts(showProductsAux);
   }, [products]);
-
-  useEffect(() => {
-    setProducts(response);
-  }, []);
 
   return (
     <ContanerShowCase bg={bg}>
