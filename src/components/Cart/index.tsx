@@ -40,7 +40,7 @@ const Cart: FC<CartType> = (props) => {
 
   useEffect(() => {
     callProducts(
-      cart.map((item) => {
+      cart?.map((item) => {
         return item.id;
       })
     );
