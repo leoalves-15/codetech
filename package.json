@@ -12,7 +12,8 @@
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
     "build": "vite build",
-    "serve": "vite preview"
+    "serve": "vite preview",
+    "start": "vite"
   },
   "dependencies": {
     "@types/storybook__react": "^5.2.1",
