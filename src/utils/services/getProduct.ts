@@ -3,7 +3,7 @@ import axios from "axios";
 export const getProduct = async (id: number) => {
     var config = {
         method: 'get',
-        url: `http://127.0.0.1:4000/api/product/${id}`,
+        url: `https://codetechback.herokuapp.com/api/product/${id}`,
         headers: { }
     };
     
