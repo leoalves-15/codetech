@@ -3,7 +3,7 @@ import { ContainCart, OrderResume } from "./styles";
 import { BuyButton, ProductPrice } from "../ProductCard/styles";
 import { connect } from "react-redux";
 import { CartType } from "./cart.type";
-import Close from "../../assets/Close.svg";
+import Close from "../../assets/CloseB.svg";
 import { Closebutton } from "../MobileMenu/styles";
 import { useNavigate } from "react-router-dom";
 import CartItem from "./Components/ItemCart";
