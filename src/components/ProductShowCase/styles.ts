@@ -1,7 +1,8 @@
 import styled from "styled-components";
 import Colors from "../../Colors/Colors";
+import {ContainerType} from "./type";
 
-export const ContanerShowCase = styled.div`
+export const ContanerShowCase = styled.div<ContainerType>`
   ${(props) => props.bg ? "padding: 50px; background: #F8F8F8;" : ""};
 `;
 

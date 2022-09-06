@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import Colors from "../../Colors/Colors";
+import {inputType} from "./type";
 
 export const ContainerNewsletter = styled.div`
   display: flex;
@@ -69,7 +70,7 @@ export const ContainNewsletter = styled.div`
   }
 `;
 
-export const ImputNewsLetter = styled.input`
+export const ImputNewsLetter = styled.input<inputType>`
   padding: 0;
   padding-left: 20px;
   margin: 0;
