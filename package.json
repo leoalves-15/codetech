@@ -13,7 +13,7 @@
     "build-storybook": "build-storybook",
     "build": "vite build",
     "serve": "vite preview",
-    "start": "node app.ts"
+    "start": "node serve.js"
   },
   "dependencies": {
     "@types/storybook__react": "^5.2.1",
